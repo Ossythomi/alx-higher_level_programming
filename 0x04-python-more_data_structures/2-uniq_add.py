@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-
-
-# uniq_add - adds all unique integers in a list (only once for each integer.
-def uniq_add(my_list=[]):
-    unique = set(my_list)
-    uniqueLi = list(unique)
-    sum = 0
-
-    for i in uniqueLi:
-        sum += i
-    return 
+def complex_delete(a_dictionary, value):
+	keys_to_del = []
+	for key in a_dictionary:
+		if a_dictionary[key] == value:
+			keys_to_del.append(key)
+	for key in keys_to_del:
+		del a_dictionary[key]
+	return a_dictionary 
